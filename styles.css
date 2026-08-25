@@ -19,7 +19,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     padding: 40px;
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
 }
 
@@ -68,14 +68,61 @@ body {
 }
 
 .top-node {
-    width: 250px;
+    width: 80%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border-color: #667eea;
+    padding: 20px;
+    min-height: auto;
 }
 
 .top-node:hover {
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.node-content {
+    text-align: left;
+    width: 100%;
+}
+
+.node-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.node-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0.95;
+}
+
+.node-text {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.node-list {
+    list-style-position: inside;
+    margin: 8px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.node-list li {
+    margin: 5px 0;
+}
+
+.node-citation {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    opacity: 0.9;
+    font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 8px;
 }
 
 /* Connecting Lines */
@@ -125,7 +172,23 @@ body {
     }
 
     .top-node {
-        width: 200px;
+        width: 90%;
+    }
+
+    .node-title {
+        font-size: 1.1rem;
+    }
+
+    .node-text {
+        font-size: 0.85rem;
+    }
+
+    .node-list {
+        font-size: 0.8rem;
+    }
+
+    .node-citation {
+        font-size: 0.75rem;
     }
 
     .nodes-row {
@@ -163,7 +226,28 @@ body {
     }
 
     .top-node {
-        width: 150px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .node-title {
+        font-size: 1rem;
+    }
+
+    .node-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .node-text {
+        font-size: 0.75rem;
+    }
+
+    .node-list {
+        font-size: 0.7rem;
+    }
+
+    .node-citation {
+        font-size: 0.65rem;
     }
 
     .nodes-row {
