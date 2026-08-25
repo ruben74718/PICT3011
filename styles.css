@@ -68,7 +68,7 @@ body {
 }
 
 .top-node {
-    width: 80%;
+    width: 100%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border-color: #667eea;
@@ -172,7 +172,7 @@ body {
     }
 
     .top-node {
-        width: 90%;
+        width: 100%;
     }
 
     .node-title {
