@@ -80,6 +80,29 @@ body {
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
+.left-node,
+.right-node {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border-color: #f5576c;
+}
+
+.left-node:hover,
+.right-node:hover {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+}
+
+.third-level-node {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border-color: #00f2fe;
+    max-width: 400px;
+}
+
+.third-level-node:hover {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+}
+
 .node-content {
     text-align: left;
     width: 100%;
@@ -133,7 +156,13 @@ body {
     margin: 10px 0;
 }
 
-/* Bottom Nodes Row */
+.connection-lines-level2 {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+}
+
+/* Nodes Row */
 .nodes-row {
     display: flex;
     justify-content: space-around;
@@ -142,18 +171,12 @@ body {
     flex-wrap: wrap;
 }
 
-.left-node,
-.right-node {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
-    border-color: #f5576c;
-    flex-grow: 1;
-    min-width: 150px;
-}
-
-.left-node:hover,
-.right-node:hover {
-    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+.nodes-row-level3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 /* Responsive Design */
@@ -197,6 +220,11 @@ body {
         gap: 20px;
     }
 
+    .nodes-row-level3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .left-node,
     .right-node {
         width: 100%;
@@ -204,6 +232,10 @@ body {
     }
 
     .connection-lines {
+        height: 60px;
+    }
+
+    .connection-lines-level2 {
         height: 60px;
     }
 }
@@ -252,7 +284,15 @@ body {
         gap: 15px;
     }
 
+    .nodes-row-level3 {
+        gap: 15px;
+    }
+
     .tree-container {
         gap: 15px;
+    }
+
+    .third-level-node {
+        max-width: 100%;
     }
 }
