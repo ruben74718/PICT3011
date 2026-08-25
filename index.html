@@ -38,10 +38,31 @@
             <!-- Bottom Nodes (Children) -->
             <div class="nodes-row">
                 <div class="node left-node">
-                    <p>Sub-Attack 1</p>
+                    <div class="node-content">
+                        <p class="node-title">Inconvenience Drivers</p>
+                        <p class="node-text">Disrupt charging stations</p>
+                    </div>
                 </div>
                 <div class="node right-node">
                     <p>Sub-Attack 2</p>
+                </div>
+            </div>
+            
+            <!-- Connecting Lines to Third Level -->
+            <svg class="connection-lines-level2" preserveAspectRatio="none" viewBox="0 0 100 60">
+                <!-- Left line from left-node -->
+                <line x1="25" y1="0" x2="25" y2="30" stroke="black" stroke-width="2"/>
+                <line x1="25" y1="30" x2="10" y2="30" stroke="black" stroke-width="2"/>
+                <line x1="10" y1="30" x2="10" y2="60" stroke="black" stroke-width="2"/>
+            </svg>
+            
+            <!-- Third Level Node -->
+            <div class="nodes-row-level3">
+                <div class="node third-level-node">
+                    <div class="node-content">
+                        <p class="node-title">Issue Commands Remotely with Elevated Privileges</p>
+                        <p class="node-text">CVE-2023-46360</p>
+                    </div>
                 </div>
             </div>
         </div>
